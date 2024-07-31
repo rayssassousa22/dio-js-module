@@ -10,7 +10,7 @@ function calcularJuros(valorInicial, modoDePagamento){
     valorFinal = valorInicial + (valorInicial * 0.1);
   }
 
-  console.log(valorFinal);
+  return valorFinal;
 }
 
 function main(){
@@ -19,4 +19,6 @@ function main(){
 
 main();
 
-calcularJuros(100, 'crédito');
+const valorAPagar = calcularJuros(100, 'crédito');
+
+console.log(valorAPagar);
