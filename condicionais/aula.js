@@ -7,7 +7,7 @@ let quilometros = 233;
 if (tipoDeCarro === "gasolina") {
   gastoMedioDaViagem = (precoDaGasolina / kmRodados) * quilometros;
   console.log(gastoMedioDaViagem.toFixed(2));
-} else if (tipoDeCarro === "etanol") {
+} else {
   gastoMedioDaViagem = (precoDoEtanol / kmRodados) * quilometros;
   console.log(gastoMedioDaViagem);
 }
