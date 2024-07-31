@@ -16,7 +16,7 @@ IMC em adultos:
 
 const pesoEmKg = 130;
 const alturaEmMetros = 1.74;
-let imc = pesoEmKg / (alturaEmMetros * alturaEmMetros);
+let imc = pesoEmKg / Math.pow(alturaEmMetros, 2); //uma biblioteca que tem a funcao pow que calcula a potenciacao
 
 if (imc < 18.5){
   console.log("abaixo do peso");
