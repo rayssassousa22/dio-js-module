@@ -1,7 +1,7 @@
 const estaDeDia = true;
 const estaDeNoite = false;
 
-let boolean = estaDeDia;
+let boolean = estaDeNoite;
 
 if (boolean == estaDeDia) {
   console.log("Está de dia!");
