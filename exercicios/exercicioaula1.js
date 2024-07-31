@@ -18,6 +18,6 @@ if (media < 5) {
   console.log("reprovado");
 } else if ((media => 5) && (media <= 7)) {
   console.log("recuperação");
-} else if (media > 7) {
+} else{
   console.log("passou de semestre");
 }
