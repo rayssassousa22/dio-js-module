@@ -1,23 +1,17 @@
-// const estaDeDia = true;
-//const estaDeNoite = false;
+let tipoDeCarro = "gasolina";
+let precoDoCombustivel;
+let kmRodados = 10;
+let quilometros = 233;
+let gastoMedioDaViagem = (precoDoCombustivel / kmRodados) * quilometros;
 
-//let boolean = estaDeNoite;
-
-//if (boolean == estaDeDia) {
-//console.log("Está de dia!");
-//} else {
-//console.log("Está de noite");
-//}
-
-const numero = 10;
-const parOuImpar = (numero % 2) === 0;
-
-if (numero === 0) {
-  console.log("Número inválido");
-} else if (parOuImpar) {
-  console.log("É par");
-} else {
-  console.log("É impar");
+if (tipoDeCarro == "gasolina") {
+  precoDoCombustivel = 5.79;
+  gastoMedioDaViagem = (precoDoCombustivel / kmRodados) * quilometros;
+  console.log(gastoMedioDaViagem.toFixed(2));
+} else if ("etanol") {
+  precoDoCombustivel = 3.96;
+  gastoMedioDaViagem = (precoDoCombustivel / kmRodados) * quilometros;
+  console.log(gastoMedioDaViagem);
 }
 
 // = indica atribuição
