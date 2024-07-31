@@ -4,24 +4,24 @@ Elabore um algoritmo que calcule o que deve ser pago por um produto, considerand
 Utilize os códigos da tabela a seguir para ler qual a condição de pagamento escolhida e efetuar o cálculo adequado.
 
 Código condição de pagamento:
-- À vista Débito, recebe 10% de desconto;
-- À vista no dinheiro ou pix, recebe 15% de desconto;
-- Em duas vezes, preço normal de etiqueta sem juros;
-- Acima de duas vezes, preço normal de etiqueta mais juros de 10%.
+- 1 = À vista Débito, recebe 10% de desconto;
+- 2 = À vista no dinheiro ou pix, recebe 15% de desconto;
+- 3 = Em duas vezes, preço normal de etiqueta sem juros;
+- 4 = Acima de duas vezes, preço normal de etiqueta mais juros de 10%.
 
 */
 
 const precoEtiqueta = 50;
-let modoDePagamento = "débito à vista";
+let modoDePagamento = 1;
 let precoFinal = 0;
 
-if (modoDePagamento === "débito à vista"){
+if (modoDePagamento === 1){
   precoFinal = precoEtiqueta - (precoEtiqueta * 0.1);
   console.log("Preço a pagar: " + precoFinal);
-} else if ((modoDePagamento === "dinheiro à vista" || modoDePagamento === "pix")){
+} else if (modoDePagamento === 2){
   precoFinal = precoEtiqueta - (precoEtiqueta * 0.15);
   console.log("Preço a pagar: " + precoFinal);
-} else if ((modoDePagamento === "crédito até 2 vezes" || modoDePagamento === "2 vezes")){
+} else if (modoDePagamento === 3){
   precoFinal = precoEtiqueta;
   console.log("Preço a pagar: " + precoFinal);
 } else {
