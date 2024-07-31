@@ -9,13 +9,13 @@
 //console.log("Está de noite");
 //}
 
-const numero = 0;
+const numero = 10;
 const parOuImpar = (numero % 2) === 0;
 
 if (numero === 0) {
-  console.log("É par");
-} else if (parOuImpar) {
   console.log("Número inválido");
+} else if (parOuImpar) {
+  console.log("É par");
 } else {
   console.log("É impar");
 }
