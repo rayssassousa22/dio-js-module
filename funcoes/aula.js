@@ -19,6 +19,5 @@ function main(){
 
 main();
 
-const valorAPagar = calcularJuros(100, 'crédito');
-
+const valorAPagar = calcularJuros(100, 'crédito 2 vezes');
 console.log(valorAPagar);
