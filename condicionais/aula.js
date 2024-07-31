@@ -4,10 +4,10 @@ const precoDaGasolina = 5.79;
 const kmRodados = 10;
 let quilometros = 233;
 
-if (tipoDeCarro == "gasolina") {
+if (tipoDeCarro === "gasolina") {
   gastoMedioDaViagem = (precoDaGasolina / kmRodados) * quilometros;
   console.log(gastoMedioDaViagem.toFixed(2));
-} else if ("etanol") {
+} else if (tipoDeCarro === "etanol") {
   gastoMedioDaViagem = (precoDoEtanol / kmRodados) * quilometros;
   console.log(gastoMedioDaViagem);
 }
