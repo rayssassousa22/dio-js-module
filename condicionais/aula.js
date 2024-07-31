@@ -12,7 +12,7 @@
 const numero = 0;
 const parOuImpar = (numero % 2) === 0;
 
-if (numero == 0) {
+if (numero === 0) {
   console.log("É par");
 } else if (parOuImpar) {
   console.log("Número inválido");
