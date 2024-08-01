@@ -1,3 +1,5 @@
+
+
 class Pessoa {
   nome;
   idade;
@@ -16,9 +18,17 @@ class Pessoa {
   }
 } // uma classe define tipo uma estrutura base de um objeto e com base em uma classe podemos criar objetos invisíveis e atribuir valores para usá-los mais tarde
 
+function compararPessoas(rayssa, izabel){
+  if (rayssa.idade > izabel.idade){
+    console.log(rayssa.nome + ' é a mais velha');
+  } else if (izabel.idade > rayssa.idade){
+    console.log(izabel.nome + ' é a mais velha');
+  } else {
+    console.log(rayssa.nome + ' e ' + izabel.nome + ' tem a mesma idade');
+  }
+}
 
 const rayssa = new Pessoa('Rayssa', 19, 'Bom Jesus do Itabapoana'); //com o constructor ele consegue receber parâmetros
 const izabel = new Pessoa('Izabel', 18, 'São José do Calçado');
 
-console.log(rayssa.descrever());
-console.log(izabel.descrever());
+compararPessoas(rayssa, izabel);
