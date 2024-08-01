@@ -13,11 +13,9 @@ function calcularJuros(valorInicial, modoDePagamento){
   return valorFinal;
 }
 
-function main(){
+(function main(){
   console.log('Programa principal');
-}
-
-main();
+})(); //função invocada automaticamente
 
 const valorAPagar = calcularJuros(100, 'crédito 2 vezes');
 console.log(valorAPagar);
