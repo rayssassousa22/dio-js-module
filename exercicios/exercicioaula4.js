@@ -12,8 +12,6 @@ function verificarIdade(idade){
 
 verificarIdade(17);*/
 
-const { X509Certificate } = require("crypto");
-
 function calcularJuros(precoNormal, formaDePagamento) {
   if (formaDePagamento === 1) {
     total = precoNormal - precoNormal * 0.1;
