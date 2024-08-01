@@ -1,5 +1,7 @@
 
 
-const alunos = ['joao', 'maria']; //arrays fazem um conjunto de dados similares
+const alunos = ['joao', 'maria'];//arrays fazem um conjunto de dados similares
 
-console.log(alunos[0]);
+alunos.push('rayssa'); //adiciona um valor a array
+
+console.log(alunos);
