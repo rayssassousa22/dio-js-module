@@ -12,7 +12,7 @@ function verificarIdade(idade){
 
 verificarIdade(17);*/
 
-function calcularJuros(precoNormal, formaDePagamento) {
+function calcularDescontoouJuros(precoNormal, formaDePagamento) {
   if (formaDePagamento === 1) {
     total = precoNormal - precoNormal * 0.1;
     return total;
@@ -28,4 +28,4 @@ function calcularJuros(precoNormal, formaDePagamento) {
   }
 }
 
-console.log('Você irá pagar: ' + calcularJuros(50, 4));
+console.log('Você irá pagar: ' + calcularDescontoouJuros(50, 4));
