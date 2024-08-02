@@ -13,12 +13,13 @@ let numeroPar, naoEhPar;
 const arrayPares = [];
 
 for (let j = 0; j < array.length; j++){
-  if (array[j] % 2 === 0){
-    numeroPar = array[j];
+  
+  const numero = array[j];
+  
+  if (numero % 2 === 0){
+    numeroPar = numero;
     console.log(numeroPar);
     arrayPares.push(numeroPar);
-  } else {
-    naoEhPar = array[j];
   }
 }
 
