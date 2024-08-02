@@ -1,5 +1,10 @@
+const notas = [3, 2, 4, 5, 7];
+let index = 0;
+
 function get() {
-  return 22;
+  let notaDoAluno = notas[index];
+  index++;
+  return notaDoAluno;
 } // uma função pra pegar input do usuário
 
 function print(texto) {
