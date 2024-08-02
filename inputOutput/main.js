@@ -1,5 +1,4 @@
 
-const { getServers } = require('dns');
 const { get, print } = require('./aula'); //recebe (importa) as funções que estão sendo exportadas, estabelece uma conexão
 
 const quantidadeInformada = get(); //quando chamamos pela primeira vez sempre retorna a quantidade de valores informadas
