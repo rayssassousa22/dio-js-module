@@ -1,4 +1,4 @@
-const numeroSorteado = [5, 50, 10, 98, 23, 100];
+const numeroSorteado = [5, 50, 10, 98, 23];
 let i = 0;
 
 function get(){
