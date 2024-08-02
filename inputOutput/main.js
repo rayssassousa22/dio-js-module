@@ -1,0 +1,1 @@
+const funcoes = require('./aula'); //recebe (importa) as funções que estão sendo exportadas
