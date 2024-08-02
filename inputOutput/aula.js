@@ -1,8 +1,10 @@
-
+const numeroSorteado = [5, 50, 10, 98, 23, 100];
+let i = 0;
 
 function get(){
-  return 10;
-  
+  const valor = numeroSorteado[i];
+  i++;
+  return valor;
 } // uma função pra pegar input do usuário
 
 function print(texto){
