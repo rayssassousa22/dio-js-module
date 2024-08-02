@@ -30,7 +30,7 @@ for (let i = 0; i < notas.length; i++){
   somaDasNotas = somaDasNotas + notas[i];
 } //percorre todas as notas dentro da array e retorna o valor somados entre elas pra obter a soma de todas as notas
 
-console.log('A média do aluno é: '+ somaDasNotas / notas.length); // retorna a média final do aluno
+console.log('A média do aluno é: '+ (somaDasNotas / notas.length).toFixed(2)); // retorna a média final do aluno
 
 const nome = 'Rayssa da Silva Sousa'; //também funciona como lista
 
