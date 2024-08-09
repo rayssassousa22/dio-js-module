@@ -1,10 +1,10 @@
-const notas = [3, 2, 4, 5, 7];
+const armario = [5, 3, 4, 1, 10, 8];
 let index = 0;
 
 function get() {
-  let notaDoAluno = notas[index];
+  let numeroDoArmario = armario[index];
   index++;
-  return notaDoAluno;
+  return numeroDoArmario;
 } // uma função pra pegar input do usuário
 
 function print(texto) {
