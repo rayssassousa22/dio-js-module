@@ -1,21 +1,39 @@
 const { get, print } = require("./main.js");
 
+//criando as listas para usar os numeros
 const lista = [];
+const numerosPares = [];
+const numerosImpares = [];
 
-for (let i = 0; i < 5; i++) {
+//vai colocar os inputs em uma lista e comparar se é par ou ímpar
+for (let i = 0; i < 7; i++) {
   lista[i] = get();
-}
-
-
-
-/*function mediaFinal(media) {
-  if (media < 5) {
-    return "Reprovado";
-  } else if (media >= 5 && media < 7) {
-    return "Recuperação";
+  if (lista[i] % 2 == 0) {
+    numerosPares.push(lista[i]);
   } else {
-    return "Aprovado";
+    numerosImpares.push(lista[i]);
   }
 }
 
-print(media.toFixed(1) + " - " + mediaFinal(media));
+//vai chegar a condição do desafio
+function menorEhMaior(pares, impares) {
+  let maior = pares[0];
+  let menor = impares[0];
+
+  for (let count = 0; count < pares.length; count++) {
+    if (pares[count] > maior) {
+      maior = pares[count];
+    }
+  }
+
+  print(maior);
+
+  for (let c = 0; c < impares.length; c++) {
+    if (impares[c] < menor) {
+      menor = impares[c];
+    }
+  }
+
+  print(menor);
+}
+menorEhMaior(numerosPares, numerosImpares);

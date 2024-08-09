@@ -1,4 +1,4 @@
-const armario = [5, 3, 4, 1, 10, 8];
+const armario = [5, 3, 4, 17, 10, 8, 1];
 let index = 0;
 
 function get() {
