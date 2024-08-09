@@ -1,7 +1,7 @@
 const { gets, print } = require("./main.js");
 
-const salarioValorBruto = 1320;
-const beneficiosAdicionais = 800;
+const salarioValorBruto = 2000;
+const beneficiosAdicionais = 250;
 
 //aliquotas 
 //   0.00 a 1100.00 = 5%
