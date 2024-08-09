@@ -5,22 +5,21 @@ const n = gets();
 
 /* O primeiro número quando você chama define o número de vezes que ele irá rodar!! */
 let maiorNumeroPar = 0;
-let menorNumeroImpar = 1;
-/*const numerosPares = [];
-const numerosImpares = [];*/
+let menorNumeroImpar = 0;
 
-//vai colocar os inputs em uma lista e comparar se é par ou ímpar
 for (let i = 0; i < n; i++) {
-  const lista = gets();
-  if (lista % 2 === 0) {
+  const lista = gets(); //imprime todas de uma vez só
+  if (lista % 2 === 0) { //ele percorre todos os números pares de uma vez
     if(lista > maiorNumeroPar){
       maiorNumeroPar = lista;
     }
-  } else {
-    if(lista <= menorNumeroImpar){
-      menorNumeroImpar = lista;
+  } else { //também percorre todos os números impares
+    if(menorNumeroImpar === 0){
+      menorNumeroImpar = lista; //coloca o primeiro numero impar encontrado na lista
+    } else if (lista < menorNumeroImpar){
+      menorNumeroImpar = lista; //descobre de fato o menor numero impar
     }
   }
 }
 
-print(maiorNumeroPar + " " + menorNumeroImpar);
+print(maiorNumeroPar + ", " + menorNumeroImpar);
